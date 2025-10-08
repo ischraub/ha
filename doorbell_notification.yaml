@@ -119,11 +119,7 @@ action:
         "url": "%s",
         "content_type": "JPEG"
       },
-      "actions": {
-        "action": "URI",
-        "title": "Open Cameras",
-        "uri": "{{ click_action }}"
-      }
+      "url": "{{ click_action }}"
     } | format(snapshot_access_file_path) %}
     {{ ios_data if is_ios else android_data }}
 - delay: '{{ throttle_time }}'
