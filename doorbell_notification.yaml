@@ -119,7 +119,7 @@ action:
         "url": "%s",
         "content_type": "JPEG"
       },
-      "actions": "{
+      "actions": {
         "action": "uri",
         "title": "Open Cameras",
         "uri": "{{ click_action }}"
