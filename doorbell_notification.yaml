@@ -112,6 +112,6 @@ action:
   data: 
     attachment:
         url: format(snapshot_access_file_path)
-        content_type: JPEG
+        content_type: 'JPEG'
     url: '{{ click_action }}'
 - delay: '{{ throttle_time }}'
