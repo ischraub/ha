@@ -24,7 +24,6 @@ blueprint:
       selector:
         device:
           integration: mobile_app
-          multiple: true
     is_ios:
       name: iOS or Android?
       description: true = iOS, false = Android
