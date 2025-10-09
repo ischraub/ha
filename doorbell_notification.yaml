@@ -24,12 +24,6 @@ blueprint:
       selector:
         device:
           integration: mobile_app
-    is_ios:
-      name: iOS or Android?
-      description: true = iOS, false = Android
-      selector:
-        boolean: {}
-      default: true
     notification_title:
       name: Notification Title
       description: 'Default: "Ding Dong"'
@@ -87,7 +81,6 @@ variables:
   binary_sensor_name: '{{ states[binary_sensor].name }}'
   camera: !input 'camera'
   notify_device: !input 'notify_device'
-  is_ios: !input 'is_ios'
   notification_title: !input 'notification_title'
   notification_message: !input 'notification_message'
   click_action: !input 'click_action'
