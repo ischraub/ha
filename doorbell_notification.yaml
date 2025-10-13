@@ -107,4 +107,6 @@ action:
         url: '{{ snapshot_access_file_path }}'
         content_type: 'JPEG'
     url: '{{ click_action }}'
+    push:
+      sound: "Doorbell_Haptic.caf"
 - delay: '{{ throttle_time }}'
